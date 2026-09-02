@@ -3,76 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atelier — Fire &amp; Grain | Wood-Fired Bistro</title>
+  <meta name="description" content="Atelier — wood-fired bistro. Fire & grain, small plates, open flame on 5th.">
+  <title>Atelier — Fire &amp; Grain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#" aria-label="Atelier home">
-        <img src="assets/logoipsum-438.svg" alt="Atelier logo" width="88" height="40">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#" aria-label="Atelier home">
+        <img src="assets/logoipsum-438.svg" alt="Atelier" width="88" height="40" decoding="async">
+        <span class="nav__wordmark">Atelier</span>
       </a>
-      <ul>
+      <ul class="nav__links" role="list">
         <li><a href="#menu">Menu</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#hours">Hours</a></li>
-        <li><a href="#contact">Reserve</a></li>
+        <li><a href="#hours">Visit</a></li>
       </ul>
+      <a class="btn btn--primary nav__cta" href="#contact">Reserve</a>
     </nav>
   </header>
 
-  <main>
-    <section id="hero">
-      <h1>Fire &amp; Grain</h1>
-      <p>Wood-fired bistro on the corner of 5th. Small plates, slow dough, open flame.</p>
-      <a href="#menu">View Menu</a>
-      <a href="#contact">Reserve Table</a>
+  <main id="main">
+    <!-- Hero: thesis — open flame -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">42 Fifth Lane — Since 2019</p>
+          <h1 id="hero-title" class="hero__title">Fire <span class="accent">&amp;</span> Grain</h1>
+          <p class="hero__lede">Small plates, slow dough, <em>open flame</em>. Grain from the mill down the road, veg from the market at dawn.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#menu">View Menu</a>
+            <a class="btn btn--ghost" href="#hours">Hours &amp; Location</a>
+          </div>
+          <ul class="hero__meta" role="list">
+            <li>Wood-fired oven</li>
+            <li>Wed–Sun 17:00–23:00</li>
+            <li>Walk-ins welcome</li>
+          </ul>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <div class="hero__oven">
+            <div class="hero__flame"></div>
+            <div class="hero__ticket">Fire ticket — № 042</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Atelier opened 2019 with one oven and two tables. Now we serve the neighbourhood — grain from the mill down the road, veg from the market at dawn, fire all day.</p>
+    <section id="about" class="about">
+      <div class="about__inner">
+        <div class="about__label">
+          <p class="eyebrow">About</p>
+          <h2>One oven, two tables, neighbourhood first.</h2>
+        </div>
+        <div class="about__text">
+          <p>Started with a single wood-fired oven and two tables. Now a corner bistro where dough ferments 36 hours and veg arrives before sunrise.</p>
+          <p>Every plate built around fire — char, smoke, coal. No tasting menus, just good food made daily.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="menu">
-      <h2>Menu</h2>
-      <article>
-        <h3>Smoked Leek &amp; Potato</h3>
-        <p>Charred leek, confit potato, hazelnut</p>
-        <span>14</span>
-      </article>
-      <article>
-        <h3>Wood-Fired Flatbread</h3>
-        <p>Sourdough, cultured butter, sea salt</p>
-        <span>9</span>
-      </article>
-      <article>
-        <h3>Grilled Mackerel</h3>
-        <p>Fennel, preserved lemon, herbs</p>
-        <span>19</span>
-      </article>
-      <article>
-        <h3>Coal-Roasted Carrot</h3>
-        <p>Carrot top pesto, barley, curd</p>
-        <span>16</span>
-      </article>
+    <section id="menu" class="menu" aria-labelledby="menu-title">
+      <div class="section-head">
+        <p class="eyebrow">Menu — changes daily</p>
+        <h2 id="menu-title">Kitchen Ticket</h2>
+        <p class="section-head__sub">Perforated ticket, ember glow. Four plates from today's fire.</p>
+      </div>
+      <div class="ticket">
+        <ol class="ticket__list" role="list">
+          <li class="ticket__item">
+            <div class="ticket__main">
+              <h3>Smoked Leek &amp; Potato</h3>
+              <p>Charred leek, confit potato, hazelnut</p>
+            </div>
+            <span class="ticket__price">14</span>
+          </li>
+          <li class="ticket__item">
+            <div class="ticket__main">
+              <h3>Wood-Fired Flatbread</h3>
+              <p>Sourdough, cultured butter, sea salt</p>
+            </div>
+            <span class="ticket__price">09</span>
+          </li>
+          <li class="ticket__item">
+            <div class="ticket__main">
+              <h3>Grilled Mackerel</h3>
+              <p>Fennel, preserved lemon, herbs</p>
+            </div>
+            <span class="ticket__price">19</span>
+          </li>
+          <li class="ticket__item">
+            <div class="ticket__main">
+              <h3>Coal-Roasted Carrot</h3>
+              <p>Carrot top pesto, barley, curd</p>
+            </div>
+            <span class="ticket__price">16</span>
+          </li>
+        </ol>
+        <div class="ticket__foot">
+          <span>Add fresh bread +3</span>
+          <span>Service included</span>
+        </div>
+      </div>
     </section>
 
-    <section id="hours">
-      <h2>Hours &amp; Location</h2>
-      <p>Wed–Sun 17:00–23:00 | 42 Fifth Lane, Eastside</p>
-      <p>Walk-ins welcome. Reservations for 4+.</p>
+    <section id="hours" class="visit">
+      <div class="visit__grid">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2>Hours &amp; Location</h2>
+          <dl class="visit__dl">
+            <dt>Hours</dt><dd>Wed–Sun 17:00–23:00</dd>
+            <dt>Address</dt><dd>42 Fifth Lane, Eastside</dd>
+            <dt>Notes</dt><dd>Walk-ins welcome. Reservations for 4+.</dd>
+          </dl>
+        </div>
+        <div class="visit__card">
+          <h3>Find us</h3>
+          <p>Corner of 5th &amp; Elm. Blue awning, wood smoke.</p>
+          <p class="visit__phone"><a href="tel:+15550142">555-0142</a></p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Reserve</h2>
-      <p>Call 555-0142 or book online.</p>
-      <a href="tel:5550142">Call Now</a>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Reserve a table</h2>
+      <p>Call or book online. We hold space for walk-ins nightly.</p>
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="tel:+15550142">Call 555-0142</a>
+        <a class="btn btn--ghost" href="mailto:hello@atelier.example">hello@atelier.example</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Atelier. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <p>© 2026 Atelier. Grain, fire, neighbours.</p>
+      <p class="footer__small">Design: Muse Spark + frontend-design skill. Logo: logoipsum-438.svg.</p>
+    </div>
   </footer>
 </body>
 </html>
