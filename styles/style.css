@@ -178,6 +178,9 @@ a:focus-visible, button:focus-visible {
 .visit__card p { margin: 0 0 10px; color: #c8c6c0; }
 .visit__phone a { color: var(--brass); text-decoration: none; font-weight: 600; font-size: 1.05rem; }
 .visit__phone a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.visit__email a { color: #c8c6c0; text-decoration: none; }
+.visit__email a:hover { text-decoration: underline; text-underline-offset: 4px; color: var(--brass); }
+.visit__email { display: flex; align-items: center; gap: 6px; }
 
 /* Contact */
 .contact { max-width: 760px; margin: 0 auto; padding: 28px 20px 36px; text-align: center; }

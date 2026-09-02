@@ -1,0 +1,8 @@
+# keep skills local, not required for submission
+.agents/
+skills-lock.json
+# OS
+.DS_Store
+Thumbs.db
+# deps if added later
+node_modules/
